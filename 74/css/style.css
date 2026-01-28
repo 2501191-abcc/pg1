@@ -66,14 +66,12 @@ label {
 }
 
 #saveButton{
-    padding: auto;
     border: 2px solid #9fd9f6;
     box-shadow: none;
 }
 
 button {
     margin-right: 5px;
-    width: auto;
     height: 30px;
     background-color: #ffffff;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
