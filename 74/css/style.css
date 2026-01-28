@@ -66,13 +66,13 @@ label {
 }
 
 #saveButton{
+    height: 30px;
     border: 2px solid #9fd9f6;
     box-shadow: none;
 }
 
 button {
     margin-right: 5px;
-    height: 30px;
     background-color: #ffffff;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     border: none;
@@ -89,4 +89,10 @@ button:hover{
 
 #expense{
     margin: 0;
+}
+
+.deleteButton {
+    flex-shrink: 0;
+    width: 50px;
+    height: 30px;
 }

@@ -65,20 +65,32 @@ function displayRecords()
         recordDiv.className = "recordStyle";
         recordDiv.style.display = "flex";
         recordDiv.style.alignItems = "center";
-        recordDiv.style.gap = "20px";
+        recordDiv.style.gap = "15px";
         
         let dateSpan = document.createElement("span");
         dateSpan.textContent = month + "/" + day;
 
         let detailSpan = document.createElement("span");
         detailSpan.textContent = record.details;
+        detailSpan.style.maxWidth = "120px";
+        detailSpan.style.fontSize = "12px";
 
-        let priceSpan = document.createElement("span");
-        priceSpan.textContent = record.price + "円";
+        let priceSpan = document.createElement("span")
+        let price = record.price;
+        //1万円をこえると二行にする（レイアウトを崩れにくくするため）
+        if(price >= 10000)
+        {
+            let thousand = Math.floor(price / 10000);
+            let remainder = price % 10000;
+
+            priceSpan.innerHTML = thousand + "万<br>" + remainder + "円"; 
+        }
 
         //消去ボタン
         let deleteBtn = document.createElement("button");
+        deleteBtn.className = "deleteButton";
         deleteBtn.textContent = "削除";
+        
 
         deleteBtn.onclick = function(){
             records.splice(i, 1);
