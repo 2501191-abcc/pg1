@@ -40,7 +40,6 @@ function saveData()
     document.getElementById("details").value = "";
 }
 
-
 //表示、消去する関数
 function displayRecords()
 {
@@ -90,7 +89,7 @@ function displayRecords()
         let deleteBtn = document.createElement("button");
         deleteBtn.className = "deleteButton";
         deleteBtn.textContent = "削除";
-        
+
         deleteBtn.onclick = function(){
             records.splice(i, 1);
             localStorage.setItem("records", JSON.stringify(records));
