@@ -1,0 +1,94 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #9fd9f6;
+    color: #002649;
+    font-weight: bold;
+    font-family: "Yu Gothic", "Meiryo", sans-serif;
+}
+
+.wholeDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 350px;
+  background-color: #feffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+#addBuy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+div {
+  margin: 5px;
+  padding: 5px;
+}
+
+#Total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+    width: fit-content;
+    height: 50px;
+    border: 3px solid #9fd9f6;
+    border-radius: 20px;
+}
+
+.recordStyle{
+    display: flex;
+    align-items: center;
+    background-color: #bae3f9;
+    border-radius: 10px;
+    color: #007fb9;
+    font-weight: bold;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid #9fd9f6;
+    border-radius: 10px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+#saveButton{
+    padding: auto;
+    border: 2px solid #9fd9f6;
+    box-shadow: none;
+}
+
+button {
+    margin-right: 5px;
+    width: auto;
+    height: 30px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 10px;
+    color: #007fb9;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #007fb9;
+    color: #ffffff;
+}
+
+#expense{
+    margin: 0;
+}
