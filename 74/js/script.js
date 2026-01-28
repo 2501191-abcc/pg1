@@ -74,7 +74,7 @@ function displayRecords()
         detailSpan.style.maxWidth = "120px";
         detailSpan.style.fontSize = "12px";
 
-        let priceSpan = document.createElement("span")
+        let priceSpan = document.createElement("span");
         let price = record.price;
         //1万円をこえると二行にする（レイアウトを崩れにくくするため）
         if(price >= 10000)
