@@ -82,7 +82,18 @@ function displayRecords()
             let thousand = Math.floor(price / 10000);
             let remainder = price % 10000;
 
-            priceSpan.innerHTML = thousand + "万<br>" + remainder + "円"; 
+            if(remainder > 0)
+            {
+                priceSpan.innerHTML = thousand + "万<br>" + remainder + "円"; 
+            }
+            else
+            {
+                priceSpan.innerHTML = thousand + "万";
+            }
+        }
+        else
+        {
+            priceSpan.innerHTML = price;
         }
 
         //消去ボタン
