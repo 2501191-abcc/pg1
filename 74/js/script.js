@@ -93,7 +93,7 @@ function displayRecords()
         }
         else
         {
-            priceSpan.innerHTML = price;
+            priceSpan.innerHTML = price + "円";
         }
 
         //消去ボタン
