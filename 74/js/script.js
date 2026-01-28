@@ -91,7 +91,6 @@ function displayRecords()
         deleteBtn.className = "deleteButton";
         deleteBtn.textContent = "削除";
         
-
         deleteBtn.onclick = function(){
             records.splice(i, 1);
             localStorage.setItem("records", JSON.stringify(records));
