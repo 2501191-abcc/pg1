@@ -157,4 +157,4 @@ function total()
     monthlyTotal.textContent = "今月の合計： " + formatYen(total) + "円";
 }
 
-window.onload = displayRecords;
+displayRecords();
